@@ -21,4 +21,5 @@ app.get("/citas", (req, res) => {
 });
 
 const port = 8080;
-app.listen(port, ()=>console.log("estamos en http://localhost:"+port));
+app.listen(port, ()=>console.log("estamos en https://edwin-citas-app.herokuapp.com"));
+// app.listen(port, ()=>console.log("estamos en http://localhost:"+port));
