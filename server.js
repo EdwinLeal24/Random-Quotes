@@ -5,6 +5,8 @@ const datos = require('./datos')
 const app = express();
 app.use(cors());
 
+app.use(express.static(('front')))
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}))
 
@@ -20,6 +22,6 @@ app.get("/citas", (req, res) => {
 
 });
 
-const port = 8080;
-app.listen(port, ()=>console.log("estamos en https://edwin-citas-app.herokuapp.com"));
+const port = process.env.PORT || 3000;
+app.listen(port, ()=>console.log("listening on port " + port));
 // app.listen(port, ()=>console.log("estamos en http://localhost:"+port));
