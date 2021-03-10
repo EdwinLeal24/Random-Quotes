@@ -14,8 +14,6 @@ app.get("/", (req, res) => {
     res.send("<h1>Bienvenidos a Frases api</h1>");
 });
 
-console.log(datos.length)
-
 app.get("/citas", (req, res) => {
    let citas = datos[Math.floor(Math.random()*datos.length)]
     res.status(200).json(citas);

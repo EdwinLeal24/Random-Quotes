@@ -1,6 +1,3 @@
-const express = require('express');
-const router = express.Router();
-
 const citas = [
     {
         cita: 'Es intentando lo imposible como se realiza lo posible.',
